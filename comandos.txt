@@ -1,0 +1,12 @@
+instalar:
+npm i -g create-react-app@1.5.2
+
+crear pagina:
+npx create-react-app <name> (. si es en el root directory)
+
+instalar dom
+npm install react-router-dom
+
+correr la app:
+npm start (en el folder del proyecto)
+

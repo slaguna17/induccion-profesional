@@ -1,0 +1,10 @@
+herramienta react
+ideas:
+-tool market: 
+	-pagina web que marca las herramientas que usas 
+	-con reviews comentarios para que se usa la herramienta
+	-ver la opcion de pagos y planes
+	-ver que herramientas usaste para que no te olvides, 
+	-recordatorio de contrasenas 
+	-su pagina web
+	-orientada para alumnos y jovenes profesionales

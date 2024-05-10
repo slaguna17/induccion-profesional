@@ -1,0 +1,46 @@
+React
+Es una libreria de JS para construir user interfaces (frontend)
+
+Este se arma bajo componentes
+Un componente es una pieza de la interfaz de usuario entonces se arman varios componentes
+Por lo menos existe un componente y este se llama root component
+y se conecta a otros componentes haciendose un arbol de componentes
+son implementados como una clase de JS que tiene un estado y un metodo render
+
+new react app
+npm i -g create-react-app@1.5.2
+de ahi se crea la app 
+create-react-app <nombre>
+no se pueden usar mayusculas
+
+de ahi se entra al folder y se corre npm start y lanza la cosa en el puesto 3000
+
+ReactDOM.render(elemento a renderizar, donde en el DOM real se va a instalar)
+En el ID de root se va a renderizar el App Module 
+
+Para los componentes se sugiere utilizar jsx ya que se puede usar las expresiones jsx como <h1></h1>. Estos son objetos normales.
+En JSX cuando se maneja un tag y se le quiere dar una clase no se pone "class" se pone "className"
+
+Un valor dinamico se lo representa con {}
+
+Para operadores && y || en una consola de javascript se manejan con truesy, en un and por ejemplo
+true && "hola" && 1
+devolvera 1 porque todos son truesy y devuelve el ultimo truesy
+
+en js 0 es falsy, string vacio "" son falsy
+
+el manejo de eventos es diferente que vainilla js, onClick no puede ser onclick porque onClick es un objeto de react
+el manejo correcto de this es importante en js porque este se comporta de manera diferente. Dependiendo de como una funcion es llamada, this referencia otros objetos
+Si una funcion es llamada como parte de un metodo de un objeto, this retorna la referencia del objeto
+Pero si una funcion es llamada de manera independiente osea sin referencia de un objeto, this por defecto devuelve una referencia al window object y si el strict mode esta habilitado esto devolvera undefined
+
+
+En react, la vista no se actualiza automaticamente, por eso contadores y cambiar su valor con ++ no servira porque no actualiza la vista se tiene que usar set state
+
+Para pasar cosas al children se tiene que usar el this.props.children
+
+la diferencia entre props y state es que props incluya la data que le damos a un componente mientras que state incluye data local o privada de ese componente, es decir otros componentes no pueden acceder a ese state
+
+props es read only
+
+the component that owns a piece of the state, should be the one modifying it
